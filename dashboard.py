@@ -112,20 +112,21 @@ with open("newcustomer_vs_totalgrossmargint.html", "r",encoding='UTF-8') as file
     plot_html = file.read()
 st.components.v1.html(plot_html, width=1000, height=500)
 
-
-st.markdown("<h2> 2. Products are gaining new customers but losing customers of equal or greater size at the same rate </h2>", unsafe_allow_html=True)
-st.markdown("<p>performing t-test suggests that there was a difference in the means of sales between new and old customers of same size but the graph below shows that the difference in the sales of existing and new customers is far to great for this hypothesis to be true<p>", unsafe_allow_html=True)
-with open("h2_bar.html", "r",encoding='UTF-8') as file:
-    plot_html = file.read()
-st.components.v1.html(plot_html, width=1000, height=500)
-
-st.markdown("<h2>3. Products are not attractive to new business either through product offering or price-point </h2>", unsafe_allow_html=True)
+st.markdown("<h2>2. Products are not attractive to new business either through product offering or price-point </h2>", unsafe_allow_html=True)
 st.markdown("<p> After applying muti Linear regression and observing the behavior of brands(product_offering) and price points to the volume bought, it was found that changing the price point does not affect the volume bought, but if the price point is kept the same, each brand causes a huge change in the sales, this shows that brands make a huge difference for customers to buy a product <p>", unsafe_allow_html=True)
 with open("newcustomer_vs_totalgrossmargint.html", "r",encoding='UTF-8') as file:
     plot_html = file.read()
 st.components.v1.html(plot_html, width=1000, height=500)
 
-st.markdown("<h2>4.Products are gaining new customers and we are holding onto these customers but new growth is being offset by decline in volume from our existing customers </h2>", unsafe_allow_html=True)
+
+st.markdown("<h2> 3. Products are gaining new customers but losing customers of equal or greater size at the same rate </h2>", unsafe_allow_html=True)
+st.markdown("<p>performing t-test suggests that there was a difference in the means of sales between new and old customers of same size but the graph below shows that the difference in the sales of existing and new customers is far to great for this hypothesis to be true<p>", unsafe_allow_html=True)
+with open("h2_bar.html", "r",encoding='UTF-8') as file:
+    plot_html = file.read()
+st.components.v1.html(plot_html, width=1000, height=500)
+
+
+st.markdown("<h2>5.Products are gaining new customers and we are holding onto these customers but new growth is being offset by decline in volume from our existing customers </h2>", unsafe_allow_html=True)
 st.markdown("<p> t-test suggested that the difference between the volumes bought by old customer and new retained customers is pretty significant, upon visualizing we see that there is decline in the volume of old customers</p>", unsafe_allow_html=True)
 with open("volumes_of_newretained_with_existing.html", "r",encoding='UTF-8') as file:
     plot_html = file.read()
