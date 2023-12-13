@@ -71,14 +71,14 @@ with open("pie_chart.html", "r",encoding='UTF-8') as file:
 st.components.v1.html(plot_html, width=1000, height=500)
 
 st.markdown("<h1 style='text-align: center;'> box and whiskers plot for customers </h1>", unsafe_allow_html=True)
-st.markdown("<h3>the plot shows if any customer has given more than average gross margin to you guys, you can hover over the data points to check the customer id of that customer</h3>", unsafe_allow_html=True)
+st.markdown("<h3>the plot shows if any customer has given more than average gross margin,hovering over the data points shows the customer id of that customer</h3>", unsafe_allow_html=True)
 
 with open("box.html", "r",encoding='UTF-8') as file:
     plot_html = file.read()
 st.components.v1.html(plot_html, width=1000, height=500)
 
 st.markdown("<h1 style='text-align: center;'> box and whiskers for skus </h1>", unsafe_allow_html=True)
-st.markdown("<h3>the plot shows if any sku has given more than average gross margin to you guys, you can hover over the data points to check the customer id of that customer</h3>", unsafe_allow_html=True)
+st.markdown("<h3>the plot shows if any sku has given more than average gross margin, hovering over the data points shows the customer id of that customer</h3>", unsafe_allow_html=True)
 
 with open("box_sku.html", "r",encoding='UTF-8') as file:
     plot_html = file.read()
